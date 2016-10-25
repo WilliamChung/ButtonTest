@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var downUpTime: UITextField!
     @IBOutlet weak var shiftButton: UIButton!
     @IBOutlet weak var clickButton: UIButton!
+    @IBOutlet weak var pressure: UITextField!
+    @IBOutlet weak var areaPressed: UITextField!
     
     var tStamp: String {
         return "\(NSDate().timeIntervalSince1970 * 1000)"
@@ -26,8 +28,12 @@ class ViewController: UIViewController {
     var downTimeDifference: Double = 0
     var upTimeDifference: Double = 0
     var shiftClicked: Bool = false
+    var location: CGPoint? = nil
     
     @IBAction func push(_ sender: UIButton) {
+        
+        //location = preciseLocation(in: <#T##UIView?#>)
+        //areaPressed.text = String (describing: location)
         
         oldDownTime = currentDownTime
         currentDownTime = Double (tStamp)!
@@ -38,6 +44,10 @@ class ViewController: UIViewController {
         timeStamp.text = String (tStamp)
         
     }
+    
+    
+    //func preciseLocation(in view: UIView?) -> CGPoint
+    //{}
     
     
     @IBAction func release(_ sender: UIButton) {
