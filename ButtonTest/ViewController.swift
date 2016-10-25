@@ -28,11 +28,16 @@ class ViewController: UIViewController {
     var downTimeDifference: Double = 0
     var upTimeDifference: Double = 0
     var shiftClicked: Bool = false
-    var location: CGPoint? = nil
+    var location: CGPoint?
+    
+    
+    //override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    //    let touch = touches.first
+    //}
     
     @IBAction func push(_ sender: UIButton) {
         
-        //location = preciseLocation(in: <#T##UIView?#>)
+        //location = touch.location(in: view)
         //areaPressed.text = String (describing: location)
         
         oldDownTime = currentDownTime
@@ -82,6 +87,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 
