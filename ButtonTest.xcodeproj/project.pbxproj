@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					3D6879B51DBF06660024D94E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PM7QK3NA75;
+						DevelopmentTeam = XCUS66859T;
 						ProvisioningStyle = Automatic;
 					};
 					3D6879C91DBF06670024D94E = {
@@ -415,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PM7QK3NA75;
+				DEVELOPMENT_TEAM = XCUS66859T;
 				INFOPLIST_FILE = ButtonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wchung.ButtonTest;
@@ -428,7 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PM7QK3NA75;
+				DEVELOPMENT_TEAM = XCUS66859T;
 				INFOPLIST_FILE = ButtonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wchung.ButtonTest;
