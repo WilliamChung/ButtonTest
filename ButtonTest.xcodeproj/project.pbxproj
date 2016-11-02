@@ -194,6 +194,7 @@
 					3D6879B51DBF06660024D94E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = PM7QK3NA75;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					3D6879C91DBF06670024D94E = {
@@ -415,12 +416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = PM7QK3NA75;
 				INFOPLIST_FILE = ButtonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wchung.ButtonTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = PM7QK3NA75;
 				INFOPLIST_FILE = ButtonTest/Info.plist;
@@ -518,6 +522,7 @@
 				3D6879E01DBF06670024D94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D6879E11DBF06670024D94E /* Build configuration list for PBXNativeTarget "ButtonTestTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				3D6879E31DBF06670024D94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D6879E41DBF06670024D94E /* Build configuration list for PBXNativeTarget "ButtonTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +540,7 @@
 				3D6879E61DBF06670024D94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,10 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var timeStamp: UITextField!
     @IBOutlet weak var downDownTime: UITextField!
     @IBOutlet weak var downUpTime: UITextField!
+    @IBOutlet weak var locationField: UITextField!
     @IBOutlet weak var shiftButton: UIButton!
     @IBOutlet weak var clickButton: UIButton!
     
@@ -71,7 +72,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        if let touch = touches.first {
+            let position = touch.location(in: view)
+            //print(position)
+            locationField.text = String (describing: position)
+        }
+        
+    }
+    
 }
+
 
