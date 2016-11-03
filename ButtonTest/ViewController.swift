@@ -31,9 +31,16 @@ class ViewController: UIViewController {
     var location: CGPoint?
     
     
-    //override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    //    let touch = touches.first
-    //}
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as UITouch?
+        {
+            //The view you would like to get the tap location from.
+            _ = touch.location(in: self.view)
+            areaPressed.text = String (describing: location)
+            print(location)
+        }
+        super.touchesBegan(touches , with: event)
+    }
     
     @IBAction func push(_ sender: UIButton) {
         
