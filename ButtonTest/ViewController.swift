@@ -34,10 +34,10 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             
         if let touch = touches.first {
-            let position :CGPoint = touch.location(in: view)
+            let position: CGPoint = touch.location(in: view)
             print(position.x)
             print(position.y)
-                            
+            
             let locX: CGFloat = position.x
             let locY: CGFloat = position.y
                 
@@ -45,15 +45,36 @@ class ViewController: UIViewController {
             let y = String (stringInterpolationSegment:locY)
                 
             areaPressed.text = "X: " + x + ", Y: " + y
+            
+            for touch in touches{
+                let touchForce: CGFloat = touch.force
+                let maxForce: CGFloat = touch.maximumPossibleForce
+                let touchPercentage: CGFloat = touchForce/maxForce
+                
+                let tP = String (stringInterpolationSegment:touchPercentage)
+                
+                print("% Touch pressure: \(touchForce/maxForce)");
+                pressure.text = tP + "%"
+            }
         }
         
         super.touchesBegan(touches , with: event)
     }
+    /*
+    class customButton : UIButton{
+        override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+            for touch in touches{
+                print("% Touch pressure: \(touch.force/touch.maximumPossibleForce)");
+            }
+        }
+        
+        override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+            print("Touches End")
+        }
+    }
+ */
     
     @IBAction func push(_ sender: UIButton) {
-        
-        //location = touch.location(in: view)
-        //areaPressed.text = String (describing: location)
         
         oldDownTime = currentDownTime
         currentDownTime = Double (tStamp)!
